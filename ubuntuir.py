@@ -2,7 +2,7 @@
 import requests
 from headers import HEADERS
 
-def post2PasteUbuntuIr(text: str) -> str:
+def paste(text: str) -> str:
     DATA = {
         'text': f'{text}',
     }
@@ -12,7 +12,7 @@ def post2PasteUbuntuIr(text: str) -> str:
     return response.url
 
 if __name__ == '__main__':
-    print(post2PasteUbuntuIr(
+    print(paste(
         """
         this is the sample text.
         to use this script you should write another simple scritp which will let you
