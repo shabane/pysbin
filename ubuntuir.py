@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 import requests
-from headers import HEADERS
+from .headers import HEADERS
 
 def paste(text: str) -> str:
     DATA = {
